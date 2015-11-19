@@ -48,7 +48,9 @@ public class HipsterPanel extends JPanel
 
 	private void setupComboBox()
 	{
-
+		String [] phrases = baseController.getFirstHipster().getHipsterPhrases();
+		DefaultComboBoxModel phraseModel = new DefaultComboBoxModel(phrases);
+		phraseComboBox.setModel(phraseModel);
 	}
 
 	private void setupPanel()
