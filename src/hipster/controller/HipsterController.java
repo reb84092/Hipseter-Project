@@ -17,7 +17,8 @@ public class HipsterController
 	
 	public HipsterController()
 	{
-		
+		firstHipster = new Hipster();
+		baseFrame = new HipsterFrame(this);
 	}
 	
 	public void start()

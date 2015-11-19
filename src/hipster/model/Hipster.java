@@ -22,10 +22,10 @@ public class Hipster
 	
 	private void setupArray()
 	{
-		
-		
-		
-		
+		hipsterPhrases[0] = "That is so mainstream!";
+		hipsterPhrases[1] = "I don't mean to sound like a hipster, but, ";
+		hipsterPhrases[2] = "That is SO fascinating. DO tell me more.";
+		hipsterPhrases[3] = "I was a hipster before it was cool";
 	}
 
 	private void setupBooks()
