@@ -17,6 +17,56 @@ public class Book
 		this.price = -0.00;
 	}
 	
+	public int getPageCount()
+	{
+		return pageCount;
+	}
+
+	public void setPageCount(int pageCount)
+	{
+		this.pageCount = pageCount;
+	}
+
+	public String getAuthor()
+	{
+		return author;
+	}
+
+	public void setAuthor(String author)
+	{
+		this.author = author;
+	}
+
+	public String getSubject()
+	{
+		return subject;
+	}
+
+	public void setSubject(String subject)
+	{
+		this.subject = subject;
+	}
+
+	public String getTitle()
+	{
+		return title;
+	}
+
+	public void setTitle(String title)
+	{
+		this.title = title;
+	}
+
+	public double getPrice()
+	{
+		return price;
+	}
+
+	public void setPrice(double price)
+	{
+		this.price = price;
+	}
+
 	public Book(int pageCount, String author, String subject, String title, double price)
 	{
 		this.pageCount = pageCount;
@@ -26,55 +76,7 @@ public class Book
 		this.price = price;
 	}
 	
-	public int getPageCount()
-	{
-		
-	}
 	
-	public String getAuthor()
-	{
-		
-	}
-	
-	public String getSubject()
-	{
-		
-	}
-	
-	public String getTitle()
-	{
-		
-	}
-	
-	public double getPrice()
-	{
-		
-	}
-
-	public void setPageCount(int pageCount)
-	{
-		this.pageCount = pageCount;
-	}
-
-	public void setAuthor(String author)
-	{
-		this.author = author;
-	}
-
-	public void setSubject(String subject)
-	{
-		this.subject = subject;
-	}
-
-	public void setTitle(String title)
-	{
-		this.title = title;
-	}
-
-	public void setPrice(double price)
-	{
-		this.price = price;
-	}
 
 	
 }
