@@ -69,6 +69,14 @@ public class HipsterPanel extends JPanel
 
 	}
 
+	private void changeColor()
+	{
+		int red = (int) (Math.random() * 256);
+		int green = (int) (Math.random() * 256);
+		int blue = (int) (Math.random() * 256);
+		setBackground(new Color(red, green, blue));
+	}
+	
 	private void setupListeners()
 	{
 		changeBookButton.addActionListener(new ActionListener()
