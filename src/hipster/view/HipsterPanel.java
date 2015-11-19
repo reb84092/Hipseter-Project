@@ -25,55 +25,52 @@ public class HipsterPanel extends JPanel
 	private JButton changeBookButton;
 	private int maxClicks;
 	private int startClick;
-	
+
 	public HipsterPanel(HipsterController baseController)
 	{
 		this.baseController = baseController;
 		baseLayout = new SpringLayout();
 		bookPageCountLabel = new JLabel("The page count");
-		bookAuthorLabel= new JLabel("The author");
+		bookAuthorLabel = new JLabel("The author");
 		bookPriceLabel = new JLabel("The price");
 		bookSubjectLabel = new JLabel("The subject");
-		bookTitleLabel = new JLabel ("The title");
+		bookTitleLabel = new JLabel("The title");
 		changeBookButton = new JButton("Change books");
 		phraseComboBox = new JComboBox<String>();
 		maxClicks = baseController.getFirstHipster().getHipsterBooks().length;
 		startClick = 0;
-		
+
 		setupComboBox();
 		setupPanel();
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		private void setupPanel()
-		{
-			this.setLayout(baseLayout);
-			this.setBackground(Color.ORANGE);
-			this.add(bookAuthorLabel);
-			this.add(phraseComboBox);
-			this.add(bookPageCountLabel);
-			this.add(bookTitleLabel);
-			this.add(bookPriceLabel);
-			this.add(bookSubjectLabel);
-			this.add(changeBookButton);
+		setupLayout();
+		setupListeners();
+	}
+
+	private void setupComboBox()
+	{
+
+	}
+
+	private void setupPanel()
+	{
+		this.setLayout(baseLayout);
+		this.setBackground(Color.ORANGE);
+		this.add(bookAuthorLabel);
+		this.add(phraseComboBox);
+		this.add(bookPageCountLabel);
+		this.add(bookTitleLabel);
+		this.add(bookPriceLabel);
+		this.add(bookSubjectLabel);
+		this.add(changeBookButton);
+	}
+
+	private void setupLayout()
+	{
+
 	}
 	
-		
-private void setupLayout()
+	private void setupListeners()
 	{
-		return baseLayout;
+		
 	}
-
-public void setBaseLayout(SpringLayout baseLayout)
-{
-	this.baseLayout = baseLayout;
 }
-

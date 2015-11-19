@@ -1,6 +1,7 @@
 package hipster.controller;
 
 import hipster.model.Hipster;
+import hipster.view.HipsterFrame;
 
 /**
  * Hipster Controller
@@ -15,6 +16,9 @@ public class HipsterController
 	private HipsterFrame baseFrame;
 	
 	public HipsterController()
+	{
+		
+	}
 	
 	public void start()
 	{

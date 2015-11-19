@@ -53,6 +53,36 @@ public class Hipster
 		hipsterBooks[2] = thirdBook;
 	}
 	
+	public String getName()
+	{
+		return name;
+	}
+
+	public void setName(String name)
+	{
+		this.name = name;
+	}
+
+	public String[] getHipsterPhrases()
+	{
+		return hipsterPhrases;
+	}
+
+	public void setHipsterPhrases(String[] hipsterPhrases)
+	{
+		this.hipsterPhrases = hipsterPhrases;
+	}
+
+	public Book[] getHipsterBooks()
+	{
+		return hipsterBooks;
+	}
+
+	public void setHipsterBooks(Book[] hipsterBooks)
+	{
+		this.hipsterBooks = hipsterBooks;
+	}
+
 	public Hipster(String name)
 	{
 		this.name = name;
